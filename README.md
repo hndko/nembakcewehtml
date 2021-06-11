@@ -9,4 +9,4 @@ Programming :
 - FontAwesome
 
 # Live Demo
-Link : heyyou.loveslife.biz
+Link : http://heyyou.loveslife.biz/
