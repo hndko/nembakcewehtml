@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap");
+
+/* =========================================
+   1. Global Variables & Reset
+   ========================================= */
+:root {
+  --primary-color: #ff4d6d;
+  --secondary-color: #ff8fa3;
+  --bg-color: #ffe6eb;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --text-color: #590d22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at top left,
+    #ff9a9e 0%,
+    #fecfef 99%,
+    #fecfef 100%
+  );
+  overflow: hidden;
+  position: relative;
+}
+
+/* =========================================
+   2. Background Animations (Floating Hearts)
+   ========================================= */
+.bg-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.heart-bg {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.3);
+  animation: float 15s infinite linear;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   3. Main Container (Glassmorphism)
+   ========================================= */
+.container {
+  background: var(--glass-bg);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 24px;
+  border: 1px solid var(--glass-border);
+  padding: 3rem;
+  text-align: center;
+  max-width: 90%;
+  width: 450px;
+  position: relative;
+  animation: popIn 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   4. Typography & Images
+   ========================================= */
+h1 {
+  font-family: "Dancing Script", cursive;
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(255, 77, 109, 0.2);
+}
+
+.gif-container {
+  margin: 20px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gif-container:hover {
+  transform: scale(1.05);
+}
+
+.gif-container img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.question {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+/* =========================================
+   5. Buttons
+   ========================================= */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  min-height: 60px; /* Space for buttons */
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* "Mau" Button Styles */
+.btn-mau {
+  background: white;
+  color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
+}
+
+.btn-mau:hover {
+  transform: translateY(-3px) scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+  background: #fff0f3;
+}
+
+/* "Gamau" Button Styles */
+.btn-gamau {
+  background: rgba(255, 255, 255, 0.5);
+  color: #666;
+  border: 1px solid white;
+  /* Important for absolute positioning when moving */
+  transition: left 0.2s, top 0.2s;
+}
+
+/* =========================================
+   6. Mobile Responsive Adjustments
+   ========================================= */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .question {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 2rem;
+  }
+}
