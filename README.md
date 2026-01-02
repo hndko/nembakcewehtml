@@ -4,58 +4,61 @@
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 
-> A premium, interactive, and romantic web experience designed to help you express your feelings in the most memorable way.
+> Sebuah website romantis, interaktif, dan premium yang dirancang khusus untuk membantu mengutarakan perasaanmu dengan cara yang paling berkesan.
 
-## ✨ Features
+## ✨ Fitur Utama
 
-- **🎨 Premium Glassmorphism UI**: A modern, translucent design aesthetic that feels high-end and elegant.
-- **❤️ Romantic Atmosphere**: Animated floating hearts background and soft, pastel color palette.
-- **🏃‍♂️ Interactive "Runaway" Button**: The "Gamau" (No) button playfully evades the cursor or touch, making rejection impossible!
-- **🎉 Celebration Mode**: Clicking "Mau" (Yes) triggers a confetti explosion and a custom success popup with a cute anime couple.
-- **📱 Fully Responsive**: Optimized for all devices, from large desktops to small mobile phones (iPhone SE, etc.).
+- **🎨 UI Glassmorphism Premium**: Desain modern dengan efek kaca transparan yang terlihat elegan dan mewah.
+- **❤️ Suasana Romantis**: Latar belakang animasi hati yang melayang dan palet warna pastel yang lembut.
+- **🏃‍♂️ Tombol "Gamau" yang Lincah**: Tombol penolakan yang secara otomatis menghindar dari kursor atau sentuhan, membuat cintamu tak bisa ditolak!
+- **🎉 Mode Perayaan**: Saat si dia klik "Mau", layar akan meledakkan konfeti dan menampilkan popup anime couple yang lucu.
+- **📱 Responsif Penuh**: Tampilan optimal di semua perangkat, mulai dari layar komputer besar hingga HP kecil (iPhone SE, dll).
 
-## 🛠️ Tech Stack
+## 🛠️ Teknologi yang Digunakan
 
-- **HTML5**: Semantic and accessible structure.
-- **CSS3**: Custom variables, Glassmorphism effects, CSS Grid/Flexbox, and complex animations.
-- **JavaScript (ES6+)**: Interactive logic, DOM manipulation, and event handling.
-- **Libraries**:
-  - [SweetAlert2](https://sweetalert2.github.io/): For beautiful, customizable popups.
-  - [Canvas Confetti](https://www.kirilv.com/canvas-confetti/): For the celebration effect.
-  - [FontAwesome](https://fontawesome.com/): For vector icons.
-  - [Google Fonts](https://fonts.google.com/): Using 'Poppins' and 'Dancing Script'.
+- **HTML5**: Struktur semantik dan rapi.
+- **CSS3**: Variabel custom, efek Glassmorphism, Layout Grid/Flexbox, dan animasi kompleks.
+- **JavaScript (ES6+)**: Logika interaktif, manipulasi DOM, dan event handling.
+- **Library Tambahan**:
+  - [SweetAlert2](https://sweetalert2.github.io/): Untuk popup notifikasi yang cantik.
+  - [Canvas Confetti](https://www.kirilv.com/canvas-confetti/): Untuk efek ledakan kertas warna-warni.
+  - [FontAwesome](https://fontawesome.com/): Ikon vektor berkualitas.
+  - [Google Fonts](https://fonts.google.com/): Menggunakan font 'Poppins' dan 'Dancing Script'.
 
-## 📂 Project Structure
+## 📂 Struktur Proyek
 
-The project is organized for scalability and maintainability:
+Proyek ini disusun dengan rapi agar mudah dikembangkan:
 
 ```
 /
-├── index.html          # Main entry point
+├── index.html          # File utama
 └── assets/
     ├── css/
-    │   └── style.css   # Polished, responsive styles
+    │   └── style.css   # Style yang sudah dipoles dan responsif
     ├── js/
-    │   └── script.js   # Logic with JSDoc comments
+    │   └── script.js   # Logika program dengan komentar penjelasan
     └── img/
-        └── cute-couple.png # Custom assets
+        └── cute-couple.png # Aset gambar custom
+    └── docs/
+        └── screenshots/
+            └── home.png # Screenshot preview
 ```
 
-## 🚀 How to Use
+## 🚀 Cara Penggunaan
 
-1.  **Clone the repository**:
+1.  **Download / Clone Repository**:
     ```bash
     git clone https://github.com/username/nembak-cewe-html.git
     ```
-2.  **Open `index.html`**: Simply double-click the file to view it in your browser.
-3.  **Customize**:
-    - Edit `assets/js/script.js` to change the success message or redirect URL (e.g., to WhatsApp).
-    - Replace `assets/img/cute-couple.png` with your own image if desired.
+2.  **Buka File**: Klik dua kali `index.html` untuk membukanya di browser.
+3.  **Customisasi**:
+    - Edit `assets/js/script.js` untuk mengganti pesan sukses atau link redirect (misal: ke WhatsApp).
+    - Ganti `assets/img/cute-couple.png` dengan fotomu sendiri jika mau.
 
-## 🖼️ Preview
+## 🖼️ Pratinjau
 
 ![Home Preview](assets/docs/screenshots/home.png)
 
 ---
 
-Made with ❤️ by [Your Name]
+Dibuat dengan ❤️ oleh **Handoko x Mari Partner**
