@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Swal.fire({
       title: "I knew it! ❤️",
       text: "Makasih udah mau terima aku. See you soon, sayang! 😘",
-      imageUrl:
-        "https://media.tenor.com/images/b77fd0f82470f3da9772ee7b2c5896a2/tenor.gif",
+      imageUrl: "assets/img/cute-couple.png",
       imageWidth: 200,
       imageHeight: 200,
       imageAlt: "Cute couple",

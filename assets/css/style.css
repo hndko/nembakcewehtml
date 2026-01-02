@@ -181,16 +181,57 @@ button {
 }
 
 /* =========================================
-   6. Mobile Responsive Adjustments
+   6. Responsive Design Checkpoints
    ========================================= */
-@media (max-width: 480px) {
+
+/* Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 2.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
+  .container {
+    width: 90%;
+    padding: 2rem;
+  }
   .question {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Mobile Devices (iPhone SE, etc) */
+@media (max-width: 380px) {
+  h1 {
+    font-size: 2rem;
   }
   .container {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .btn-group {
+    flex-direction: column; /* Stack buttons on very small screens if needed, or keep row */
+    gap: 15px;
+  }
+  button {
+    width: 100%; /* Full width buttons for easier tapping */
+    justify-content: center;
+  }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+  .container {
+    margin: 20px 0;
   }
 }
